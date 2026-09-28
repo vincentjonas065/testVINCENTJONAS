@@ -1,6 +1,5 @@
 package za.ac.iie.prog6112.testvincentjonas;
 
-import java.util.Arrays;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -46,5 +45,24 @@ public class Question1 {
                 "TOTAL", consoleTotals[0], consoleTotals[1], consoleTotals[2], 
                 consoleTotals[0] + consoleTotals[1] + consoleTotals[2]);
         System.out.println("---------------------------------------------------------------------");
-    }
+
+        // Calculate and display city totals in a separate table
+
+
+        System.out.println("\n\nCITY TOTALS");
+        System.out.println("---------------------------------------------------------------------");
+        System.out.printf("%-18s %-10s%n", "City", "Total Sales");
+        System.out.println("---------------------------------------------------------------------");
+
+        for (int i = 0; i < cities.length; i++) {
+            int cityTotal = 0;
+            for (int j = 0; j < consoles.length; j++) {
+                cityTotal += sales[i][j];
+            }
+            System.out.printf("%-18s %-10d%n", cities[i], cityTotal);
+            
+        }
+        
+        
+ }
 }

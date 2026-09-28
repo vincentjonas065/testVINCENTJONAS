@@ -1,5 +1,16 @@
 package za.ac.iie.prog6112.testvincentjonas;
 
+import java.util.Arrays;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author Student
+ */
 public class TestVINCENTJONAS {
     public static void main(String[] args) {
 
@@ -14,7 +25,7 @@ public class TestVINCENTJONAS {
 
         System.out.println("GAMING CONSOLE REPORT");
         System.out.println("---------------------------------------------------------------------");
-        System.out.printf( 
+        System.out.printf("%-18s %-10s %-10s %-18s %-10s%n",
                 "City", "PS5", "Xbox", "Nintendo Switch", "Total");
         System.out.println("---------------------------------------------------------------------");
 
@@ -31,12 +42,9 @@ public class TestVINCENTJONAS {
         }
 
         System.out.println("---------------------------------------------------------------------");
-        int grandTotal = 0;
-        for (int total : consoleTotals) {
-            grandTotal += total;
-        }
         System.out.printf("%-18s %-10d %-10d %-18d %-10d%n",
-                "TOTAL", consoleTotals[0], consoleTotals[1], consoleTotals[2], grandTotal);
+                "TOTAL", consoleTotals[0], consoleTotals[1], consoleTotals[2], 
+                consoleTotals[0] + consoleTotals[1] + consoleTotals[2]);
         System.out.println("---------------------------------------------------------------------");
     }
 }

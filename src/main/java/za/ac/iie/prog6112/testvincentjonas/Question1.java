@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author Student
  */
-public class TestVINCENTJONAS {
+public class Question1 {
     public static void main(String[] args) {
 
         // Sales data for 3 cities and 3 consoles

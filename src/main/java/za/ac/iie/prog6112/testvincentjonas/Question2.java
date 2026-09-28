@@ -14,7 +14,7 @@ package za.ac.iie.prog6112.testvincentjonas;
  *
  * @author Student
  */
-public class NewClass {
+public class Question2 {
     
     public interface Iconsole {
         String getConsoleType ();
